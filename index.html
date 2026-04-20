@@ -1,0 +1,815 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JamsGadget - Cellphone Inventory Made Simple</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="scroll-progress" aria-hidden="true">
+  <span class="scroll-progress-bar"></span>
+</div>
+<div class="page-shell">
+  <nav>
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <span class="brand-mark" aria-label="Jams Gadgets logo">
+          <img src="logo-image/jams-logo-cropped.png" alt="Jams Gadgets logo" onload="this.nextElementSibling.style.display='none';" onerror="this.style.display='none';">
+          <span class="brand-fallback" aria-hidden="true">
+            <svg viewBox="0 0 420 210" xmlns="http://www.w3.org/2000/svg" role="img">
+              <defs>
+                <radialGradient id="jamsOrbHeader" cx="32%" cy="26%" r="70%">
+                  <stop offset="0%" stop-color="#fff4cb"/>
+                  <stop offset="36%" stop-color="#f1c44a"/>
+                  <stop offset="72%" stop-color="#bb7f08"/>
+                  <stop offset="100%" stop-color="#734800"/>
+                </radialGradient>
+                <linearGradient id="jamsGoldTextHeader" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#fff4c2"/>
+                  <stop offset="52%" stop-color="#f0c246"/>
+                  <stop offset="100%" stop-color="#ba840e"/>
+                </linearGradient>
+                <linearGradient id="jamsSilverTextHeader" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#ffffff"/>
+                  <stop offset="60%" stop-color="#ebebeb"/>
+                  <stop offset="100%" stop-color="#9f9f9f"/>
+                </linearGradient>
+                <filter id="jamsShadowHeader" x="-20%" y="-20%" width="140%" height="160%">
+                  <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000000" flood-opacity="0.35"/>
+                </filter>
+              </defs>
+              <g filter="url(#jamsShadowHeader)">
+                <rect x="6" y="8" width="408" height="194" rx="30" fill="rgba(10, 7, 4, 0.88)" stroke="rgba(243, 197, 74, 0.2)"/>
+                <circle cx="108" cy="106" r="72" fill="url(#jamsOrbHeader)"/>
+                <circle cx="108" cy="106" r="72" fill="none" stroke="rgba(255, 241, 202, 0.38)"/>
+                <path d="M52 80c25-23 56-31 92-21 8 2 15 6 23 10" fill="none" stroke="#fff4ce" stroke-width="11" stroke-linecap="round" opacity="0.94"/>
+                <path d="M78 65c17-15 44-23 71-16" fill="none" stroke="#c48713" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
+                <path d="M52 132c39-20 79-19 117 3" fill="none" stroke="#8f5b06" stroke-width="7" stroke-linecap="round" opacity="0.58"/>
+                <text x="252" y="103" text-anchor="middle" font-family="Sora, sans-serif" font-size="52" font-weight="800" font-style="italic" letter-spacing="2" fill="url(#jamsGoldTextHeader)">JAMS</text>
+                <text x="252" y="148" text-anchor="middle" font-family="Sora, sans-serif" font-size="49" font-weight="800" font-style="italic" letter-spacing="2" fill="url(#jamsSilverTextHeader)">GADGETS</text>
+                <text x="252" y="173" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" letter-spacing="3" fill="#f1ead8">0965-985-3579</text>
+              </g>
+            </svg>
+          </span>
+        </span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#workflow">How It Works</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#download">Download</a></li>
+      </ul>
+
+      <a href="app/JamsGadget.apk" class="nav-cta" download>
+        <span>Download Android</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge fade-in">
+            <span class="badge-dot"></span>
+            Cellphone inventory management
+          </div>
+
+          <h1 class="fade-in delay-1">
+            Run your <span>gadget shop</span> with less guesswork.
+          </h1>
+
+          <p class="hero-desc fade-in delay-2">
+            JamsGadget gives you a clean command center for stock counts, cash and installment sales logs, low-stock alerts, and device-level tracking, so your team can move fast without losing control of inventory.
+          </p>
+
+          <div class="hero-actions fade-in delay-3">
+            <a href="app/JamsGadget.apk" class="btn-primary" download>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v8.59l2.3-2.29a1 1 0 1 1 1.4 1.41l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.41L11 12.59V4a1 1 0 0 1 1-1ZM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"/></svg>
+              Download for Android
+            </a>
+            <a href="#features" class="btn-secondary">
+              Explore Features
+            </a>
+          </div>
+
+          <p class="platform-note fade-in delay-4">Android available now. iOS and Desktop coming soon.</p>
+
+          <div class="trust-strip fade-in delay-4" aria-label="Trust highlights">
+            <span class="trust-pill">Multi-user accounts</span>
+            <span class="trust-pill">Live stock sync</span>
+            <span class="trust-pill">Cloud data backup</span>
+          </div>
+
+          <div class="hero-meta fade-in delay-5">
+            <div class="meta-card">
+              <strong>500+</strong>
+              <span>Trackable devices across brands, variants, and storage options.</span>
+            </div>
+            <div class="meta-card">
+              <strong>Real-time</strong>
+              <span>Live stock visibility for fast-moving units and reorders.</span>
+            </div>
+            <div class="meta-card">
+              <strong>Minutes</strong>
+              <span>Quick setup for small gadget stores that need structure fast.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual fade-in delay-5">
+          <span class="orb orb-cyan"></span>
+          <span class="orb orb-orange"></span>
+
+          <div class="phone-stage">
+            <div class="stage-ring"></div>
+
+            <div class="floating-card floating-sales">
+              <strong>P142,500</strong>
+              <span>This week revenue</span>
+              <div class="floating-pill">+18% from last week</div>
+            </div>
+
+            <div class="phone-mockup">
+              <div class="phone-shell">
+                <div class="phone-notch"></div>
+                <div class="phone-screen">
+                  <div class="phone-status">
+                    <span>9:41</span>
+                    <span>5G 100%</span>
+                  </div>
+
+                  <div class="phone-overview">
+                    <div>
+                      <div class="phone-kicker">Today overview</div>
+                      <div class="phone-title">JamsGadget</div>
+                    </div>
+                    <span class="phone-chip">Synced</span>
+                  </div>
+
+                  <div class="phone-row">
+                    <div class="stat-card">
+                      <div class="lbl">Units</div>
+                      <div class="val">247</div>
+                    </div>
+                    <div class="stat-card">
+                      <div class="lbl">Low stock</div>
+                      <div class="val">18</div>
+                    </div>
+                  </div>
+
+                  <div class="phone-row">
+                    <div class="stat-card">
+                      <div class="lbl">Value</div>
+                      <div class="val">P1.2M</div>
+                    </div>
+                    <div class="stat-card">
+                      <div class="lbl">Sold today</div>
+                      <div class="val">34</div>
+                    </div>
+                  </div>
+
+                  <div class="mini-chart">
+                    <div class="chart-bars" aria-hidden="true">
+                      <span style="height: 16px;"></span>
+                      <span style="height: 28px;"></span>
+                      <span style="height: 22px;"></span>
+                      <span style="height: 36px;"></span>
+                      <span style="height: 30px;"></span>
+                    </div>
+                    <div class="chart-copy">
+                      <strong>Sales momentum</strong>
+                      <small>Top movers are updating automatically as devices are sold.</small>
+                    </div>
+                  </div>
+
+                  <div class="inventory-list">
+                    <div class="list-item">
+                      <div class="item-main">
+                        <span class="item-dot" style="background:#64f4b2"></span>
+                        <div>
+                          <span class="item-name">iPhone 15 Pro</span>
+                          <span class="item-sub">256GB &bull; Natural Titanium</span>
+                        </div>
+                      </div>
+                      <div class="item-side">
+                        <span class="item-qty">42</span>
+                        <span class="item-status status-ok">In stock</span>
+                      </div>
+                    </div>
+
+                    <div class="list-item">
+                      <div class="item-main">
+                        <span class="item-dot" style="background:#ff8c5a"></span>
+                        <div>
+                          <span class="item-name">Samsung S24</span>
+                          <span class="item-sub">128GB &bull; Black</span>
+                        </div>
+                      </div>
+                      <div class="item-side">
+                        <span class="item-qty">7</span>
+                        <span class="item-status status-low">Low</span>
+                      </div>
+                    </div>
+
+                    <div class="list-item">
+                      <div class="item-main">
+                        <span class="item-dot" style="background:#64f4b2"></span>
+                        <div>
+                          <span class="item-name">Xiaomi 14</span>
+                          <span class="item-sub">512GB &bull; White</span>
+                        </div>
+                      </div>
+                      <div class="item-side">
+                        <span class="item-qty">58</span>
+                        <span class="item-status status-ok">Healthy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="floating-card floating-alert">
+              <strong>Restock needed</strong>
+              <span>OPPO Reno 11 is down to 3 units. Reorder before the weekend rush.</span>
+              <div class="floating-pill">Alert active</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-banner">
+      <div class="container stats-grid">
+        <div class="stats-card">
+          <span class="num count-up" data-target="500" data-suffix="+">0</span>
+          <span class="desc">Devices, colors, storage tiers, and conditions managed in one place.</span>
+        </div>
+        <div class="stats-card">
+          <span class="num count-up" data-target="24" data-suffix="/7">0</span>
+          <span class="desc">Inventory visibility for owners and staff who need instant answers.</span>
+        </div>
+        <div class="stats-card">
+          <span class="num count-up" data-target="34">0</span>
+          <span class="desc">Sample daily sales logged directly against units and stock counts.</span>
+        </div>
+        <div class="stats-card">
+          <span class="num">Free</span>
+          <span class="desc">Simple onboarding for stores that want to get organized quickly.</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-label">What you get</span>
+            <h2 class="section-title">Everything your <span>shop floor</span> needs.</h2>
+          </div>
+          <p class="section-sub">
+            From cataloging incoming units to spotting fast sellers and upcoming shortages, JamsGadget helps your store feel more organized, more responsive, and easier to scale.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-spotlight">
+            <span class="spotlight-chip">Built for daily operations</span>
+            <h3 class="spotlight-title">A dashboard that feels clear even during busy selling hours.</h3>
+            <p class="spotlight-copy">
+              The interface keeps the most important numbers close: total units, inventory value, best-selling models, and reorder pressure. That means less spreadsheet hopping and fewer missed stock problems.
+            </p>
+
+            <div class="spotlight-panel">
+              <div class="panel-mini">
+                <strong>Catalog</strong>
+                <span>Track brand, model, color, storage, condition, and IMEI details.</span>
+              </div>
+              <div class="panel-mini">
+                <strong>Sales + Installments</strong>
+                <span>Record full and installment transactions quickly and link each payment to exact device units.</span>
+              </div>
+              <div class="panel-mini">
+                <strong>Alerts</strong>
+                <span>Spot low stock early before popular devices disappear from shelves.</span>
+              </div>
+            </div>
+          </article>
+
+          <aside class="feature-list-card">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect>
+                  <path d="M10 6h4"></path>
+                  <path d="M10 10h4"></path>
+                  <path d="M11.5 17.5h1"></path>
+                </svg>
+              </div>
+              <div>
+                <h3>Device Catalog</h3>
+                <p>Add and organize phones by brand, model, storage, color, price, and unit condition.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 18 10 12l3 3 7-8"></path>
+                  <path d="M4 6v12h16"></path>
+                </svg>
+              </div>
+              <div>
+                <h3>Real-Time Tracking</h3>
+                <p>See what is in stock, what is moving fast, and what needs immediate replenishment.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 9v4"></path>
+                  <path d="M12 17h.01"></path>
+                  <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3>Low Stock Alerts</h3>
+                <p>Flag critical models before demand spikes leave your staff scrambling for answers.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 1v22"></path>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7H14.5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <div>
+                <h3>Installment Tracking</h3>
+                <p>Track installment balances, due dates, and payment history alongside regular sales records.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="workflow" id="workflow">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-label">How it works</span>
+            <h2 class="section-title">Simple enough for small teams, <span>strong enough</span> for daily volume.</h2>
+          </div>
+          <p class="section-sub">
+            The flow is straightforward: add devices, update stock as you sell, and let the dashboard highlight what matters next.
+          </p>
+        </div>
+
+        <div class="workflow-grid">
+          <article class="workflow-card">
+            <div class="workflow-step">01</div>
+            <h3>Add your inventory</h3>
+            <p>Set up brands, models, storage options, colors, and unit details so every phone is easy to find later.</p>
+          </article>
+
+          <article class="workflow-card">
+            <div class="workflow-step">02</div>
+            <h3>Track movement</h3>
+            <p>As items are sold or restocked, counts update immediately so your team can trust the numbers on screen.</p>
+          </article>
+
+          <article class="workflow-card">
+            <div class="workflow-step">03</div>
+            <h3>Act on insights</h3>
+            <p>Use alerts, trends, and value summaries to reorder smarter and keep best sellers available.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-label">Project team</span>
+            <h2 class="section-title">Meet the people <span>behind JamsGadget</span>.</h2>
+          </div>
+          <p class="section-sub">
+            The team focuses on practical tools for gadget shops, from inventory control to day-to-day sales and installment workflows.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="team-media">
+              <img class="team-photo" src="Images/Juliana Rose Medalla.jpg" alt="Juliana Rose Medalla" onload="this.nextElementSibling.style.display='none';" onerror="this.style.display='none';">
+              <div class="team-avatar" aria-hidden="true">JM</div>
+            </div>
+            <h3>Juliana Rose Medalla</h3>
+            <span class="team-role">Project Manager</span>
+            <p>Guides product direction and ensures features solve real store operations.</p>
+          </article>
+
+          <article class="team-card">
+            <div class="team-media">
+              <img class="team-photo" src="Images/Toff Darell Vergara.jpg" alt="Toff Darell Vergara" onload="this.nextElementSibling.style.display='none';" onerror="this.style.display='none';">
+              <div class="team-avatar" aria-hidden="true">AL</div>
+            </div>
+            <h3>Toff Darell Vergara</h3>
+            <span class="team-role">UI/UX Designer</span>
+            <p>Designs clean, fast interfaces that help staff work confidently during busy hours.</p>
+          </article>
+
+          <article class="team-card">
+            <div class="team-media">
+              <img class="team-photo" src="Images/John Claude Bendanillo.jpg" alt="John Claude Bendanillo" onload="this.nextElementSibling.style.display='none';" onerror="this.style.display='none';">
+              <div class="team-avatar" aria-hidden="true">RC</div>
+            </div>
+            <h3>John Claude Bendanillo</h3>
+            <span class="team-role">Backend Developer</span>
+            <p>Builds secure data handling for inventory, sales records, and installment tracking.</p>
+          </article>
+
+          <article class="team-card">
+            <div class="team-media">
+              <img class="team-photo" src="Images/Vincent Ret Tinggoy.jpg" alt="Vincent Rey Tinggoy" onload="this.nextElementSibling.style.display='none';" onerror="this.style.display='none';">
+              <div class="team-avatar" aria-hidden="true">KT</div>
+            </div>
+            <h3>Vincent Rey Tinggoy</h3>
+            <span class="team-role">QA and Support</span>
+            <p>Tests core workflows and helps keep the app stable, clear, and ready for daily use.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-label">Common questions</span>
+            <h2 class="section-title">Questions before you <span>download</span>?</h2>
+          </div>
+          <p class="section-sub">
+            These quick answers cover setup, offline usage, and team access so you can decide faster.
+          </p>
+        </div>
+
+        <div class="faq-list" role="list">
+          <details class="faq-item" open>
+            <summary>
+              <span>Can we use JamsGadget while offline?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </summary>
+            <p>
+              No. JamsGadget requires an internet connection to access and update inventory data in real time.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>How long does setup usually take?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </summary>
+            <p>
+              Most small shops can upload inventory and start logging sales in under 30 minutes.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Can multiple staff members use JamsGadget?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </summary>
+            <p>
+              Yes. You can create multiple user accounts so different staff members can access the same store data.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Can we track installment payments?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </summary>
+            <p>
+              Yes. You can record installment transactions, track balances, and monitor payment history per customer.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Do you currently support iOS and desktop?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </summary>
+            <p>
+              For now, JamsGadget is available on Android only. iOS and desktop support are planned for a future release.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="download">
+      <div class="container">
+        <div class="download-panel">
+          <span class="section-label">Get the app</span>
+          <h2>Download JamsGadget today.</h2>
+          <p>
+            Start managing your cellphone inventory with a cleaner workflow, clearer stock visibility, and faster access to the information your store uses every day.
+          </p>
+
+          <div class="download-buttons">
+            <a href="app/JamsGadget.apk" class="dl-btn dl-featured" download>
+              <span class="dl-btn-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.6 13.2c0 2.8-2.1 4.8-5.1 4.8H6.8V6h5.5c2.7 0 4.5 1.6 4.5 4 0 1.5-.8 2.7-2 3.2 1.7.4 2.8 1.8 2.8 4Zm-7.8-2h2.2c1.4 0 2.2-.6 2.2-1.7 0-1.1-.8-1.7-2.2-1.7H9.8v3.4Zm4.3 1.8c0-1.2-.9-1.9-2.5-1.9H9.8v3.9h1.8c1.6 0 2.5-.7 2.5-2Z"/></svg>
+              </span>
+              <span class="dl-btn-text">
+                <span class="sub">Download for</span>
+                <span class="main">Android</span>
+              </span>
+            </a>
+
+            <a href="#" class="dl-btn" onclick="alert('App coming soon! The download link will be available shortly.'); return false;">
+              <span class="dl-btn-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.47c.02 2.32 2.03 3.09 2.05 3.1-.02.05-.32 1.09-1.04 2.17-.63.93-1.28 1.86-2.31 1.88-1.01.02-1.34-.6-2.5-.6s-1.53.58-2.47.62c-.99.04-1.74-1-2.38-1.93C6.42 16.84 5.4 13.46 6.75 11.1c.68-1.17 1.9-1.91 3.22-1.93 1-.02 1.95.67 2.5.67.55 0 1.6-.83 2.7-.71.46.02 1.74.18 2.56 1.38-.07.04-1.53.89-1.49 2.66ZM14.57 7.58c.53-.64.88-1.54.78-2.43-.76.03-1.67.51-2.22 1.15-.49.56-.92 1.47-.8 2.33.84.07 1.71-.43 2.24-1.05Z"/></svg>
+              </span>
+              <span class="dl-btn-text">
+                <span class="sub">Download for</span>
+                <span class="main">iOS</span>
+              </span>
+              <span class="pill-soon">Soon</span>
+            </a>
+
+            <a href="#" class="dl-btn" onclick="alert('App coming soon! The download link will be available shortly.'); return false;">
+              <span class="dl-btn-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8A2.5 2.5 0 0 1 17.5 16H13v2h3a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2h3v-2H6.5A2.5 2.5 0 0 1 4 13.5v-8ZM6.5 5a.5.5 0 0 0-.5.5V13a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5.5a.5.5 0 0 0-.5-.5h-11Z"/></svg>
+              </span>
+              <span class="dl-btn-text">
+                <span class="sub">Download for</span>
+                <span class="main">Desktop</span>
+              </span>
+              <span class="pill-soon">Soon</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-label="Jams Gadgets logo">
+          <img src="logo-image/jams-logo-cropped.png" alt="Jams Gadgets logo" onload="this.nextElementSibling.style.display='none';" onerror="this.style.display='none';">
+          <span class="brand-fallback" aria-hidden="true">
+            <svg viewBox="0 0 420 210" xmlns="http://www.w3.org/2000/svg" role="img">
+              <defs>
+                <radialGradient id="jamsOrbFooter" cx="32%" cy="26%" r="70%">
+                  <stop offset="0%" stop-color="#fff4cb"/>
+                  <stop offset="36%" stop-color="#f1c44a"/>
+                  <stop offset="72%" stop-color="#bb7f08"/>
+                  <stop offset="100%" stop-color="#734800"/>
+                </radialGradient>
+                <linearGradient id="jamsGoldTextFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#fff4c2"/>
+                  <stop offset="52%" stop-color="#f0c246"/>
+                  <stop offset="100%" stop-color="#ba840e"/>
+                </linearGradient>
+                <linearGradient id="jamsSilverTextFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#ffffff"/>
+                  <stop offset="60%" stop-color="#ebebeb"/>
+                  <stop offset="100%" stop-color="#9f9f9f"/>
+                </linearGradient>
+                <filter id="jamsShadowFooter" x="-20%" y="-20%" width="140%" height="160%">
+                  <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000000" flood-opacity="0.35"/>
+                </filter>
+              </defs>
+              <g filter="url(#jamsShadowFooter)">
+                <rect x="6" y="8" width="408" height="194" rx="30" fill="rgba(10, 7, 4, 0.88)" stroke="rgba(243, 197, 74, 0.2)"/>
+                <circle cx="108" cy="106" r="72" fill="url(#jamsOrbFooter)"/>
+                <circle cx="108" cy="106" r="72" fill="none" stroke="rgba(255, 241, 202, 0.38)"/>
+                <path d="M52 80c25-23 56-31 92-21 8 2 15 6 23 10" fill="none" stroke="#fff4ce" stroke-width="11" stroke-linecap="round" opacity="0.94"/>
+                <path d="M78 65c17-15 44-23 71-16" fill="none" stroke="#c48713" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
+                <path d="M52 132c39-20 79-19 117 3" fill="none" stroke="#8f5b06" stroke-width="7" stroke-linecap="round" opacity="0.58"/>
+                <text x="252" y="103" text-anchor="middle" font-family="Sora, sans-serif" font-size="52" font-weight="800" font-style="italic" letter-spacing="2" fill="url(#jamsGoldTextFooter)">JAMS</text>
+                <text x="252" y="148" text-anchor="middle" font-family="Sora, sans-serif" font-size="49" font-weight="800" font-style="italic" letter-spacing="2" fill="url(#jamsSilverTextFooter)">GADGETS</text>
+                <text x="252" y="173" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" letter-spacing="3" fill="#f1ead8">0965-985-3579</text>
+              </g>
+            </svg>
+          </span>
+        </span>
+        <div class="footer-copy">
+          <strong>JamsGadget</strong>
+          <span>Built for gadget shops that want a cleaner daily workflow.</span>
+        </div>
+      </div>
+
+      <p>Copyright 2026 JamsGadget. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+<a href="app/JamsGadget.apk" class="mobile-sticky-cta" aria-label="Download for Android" download>
+  Download for Android
+</a>
+<script>
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const progressBar = document.querySelector('.scroll-progress-bar');
+  const navLinks = Array.from(document.querySelectorAll('.nav-links a'));
+  const sections = navLinks
+    .map((link) => {
+      const id = link.getAttribute('href');
+      if (!id || !id.startsWith('#')) return null;
+      const element = document.querySelector(id);
+      return element ? { id, element } : null;
+    })
+    .filter(Boolean);
+
+  const updateProgress = () => {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const ratio = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+    progressBar.style.transform = `scaleX(${Math.min(100, Math.max(0, ratio)) / 100})`;
+  };
+
+  const setActiveLink = (hash) => {
+    navLinks.forEach((link) => {
+      const active = link.getAttribute('href') === hash;
+      link.classList.toggle('is-active', active);
+      if (active) {
+        link.setAttribute('aria-current', 'page');
+      } else {
+        link.removeAttribute('aria-current');
+      }
+    });
+  };
+
+  const sectionObserver = new IntersectionObserver(
+    (entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (visible?.target?.id) {
+        setActiveLink(`#${visible.target.id}`);
+      }
+    },
+    { rootMargin: '-32% 0px -52% 0px', threshold: [0.2, 0.4, 0.6] }
+  );
+
+  sections.forEach((item) => sectionObserver.observe(item.element));
+
+  const countUps = Array.from(document.querySelectorAll('.count-up'));
+  const countObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = Number(el.dataset.target || 0);
+        const prefix = el.dataset.prefix || '';
+        const suffix = el.dataset.suffix || '';
+        const duration = 1200;
+        const start = performance.now();
+
+        const render = (time) => {
+          const progress = Math.min(1, (time - start) / duration);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = `${prefix}${Math.round(target * eased)}${suffix}`;
+          if (progress < 1) {
+            requestAnimationFrame(render);
+          }
+        };
+
+        requestAnimationFrame(render);
+        observer.unobserve(el);
+      });
+    },
+    { threshold: 0.35 }
+  );
+
+  countUps.forEach((el) => countObserver.observe(el));
+
+  const faqItems = Array.from(document.querySelectorAll('.faq-item'));
+  faqItems.forEach((item) => {
+    item.addEventListener('toggle', () => {
+      if (!item.open) return;
+      faqItems.forEach((other) => {
+        if (other !== item) other.open = false;
+      });
+    });
+  });
+
+  const initScrollReveal = () => {
+    const revealItems = Array.from(
+      document.querySelectorAll('.section-head, .stats-card, .feature-item, .workflow-card, .faq-item, .dl-btn')
+    );
+
+    if (!revealItems.length) return;
+
+    revealItems.forEach((item) => {
+      item.style.opacity = '0';
+      item.style.transform = 'translateY(18px)';
+      item.style.transition = 'opacity 540ms ease, transform 540ms ease';
+    });
+
+    const revealObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          observer.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -8% 0px' }
+    );
+
+    revealItems.forEach((item, index) => {
+      item.style.transitionDelay = `${Math.min(index * 28, 180)}ms`;
+      revealObserver.observe(item);
+    });
+  };
+
+  const initHeroParallax = () => {
+    const hero = document.querySelector('.hero');
+    if (!hero || !window.matchMedia('(pointer:fine)').matches) return;
+
+    const layers = [
+      { el: hero.querySelector('.orb-cyan'), strength: 20 },
+      { el: hero.querySelector('.orb-orange'), strength: 14 },
+      { el: hero.querySelector('.phone-stage'), strength: 12 },
+      { el: hero.querySelector('.floating-sales'), strength: 18 },
+      { el: hero.querySelector('.floating-alert'), strength: 16 }
+    ].filter((item) => item.el);
+
+    if (!layers.length) return;
+
+    let targetX = 0;
+    let targetY = 0;
+    let currentX = 0;
+    let currentY = 0;
+    let frame = null;
+
+    const animate = () => {
+      currentX += (targetX - currentX) * 0.1;
+      currentY += (targetY - currentY) * 0.1;
+
+      layers.forEach(({ el, strength }) => {
+        const x = (currentX * strength).toFixed(2);
+        const y = (currentY * strength).toFixed(2);
+        el.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+      });
+
+      if (Math.abs(targetX - currentX) > 0.002 || Math.abs(targetY - currentY) > 0.002) {
+        frame = requestAnimationFrame(animate);
+      } else {
+        frame = null;
+      }
+    };
+
+    const queueAnimation = () => {
+      if (!frame) frame = requestAnimationFrame(animate);
+    };
+
+    hero.addEventListener('pointermove', (event) => {
+      const rect = hero.getBoundingClientRect();
+      const x = (event.clientX - rect.left) / rect.width;
+      const y = (event.clientY - rect.top) / rect.height;
+      targetX = (x - 0.5) * 2;
+      targetY = (y - 0.5) * 2;
+      queueAnimation();
+    });
+
+    hero.addEventListener('pointerleave', () => {
+      targetX = 0;
+      targetY = 0;
+      queueAnimation();
+    });
+  };
+
+  if (!prefersReducedMotion) {
+    initScrollReveal();
+    initHeroParallax();
+  }
+
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  window.addEventListener('resize', updateProgress);
+  updateProgress();
+
+  if (window.location.hash) {
+    setActiveLink(window.location.hash);
+  } else if (sections[0]) {
+    setActiveLink(sections[0].id);
+  }
+</script>
+</body>
+</html>
+
