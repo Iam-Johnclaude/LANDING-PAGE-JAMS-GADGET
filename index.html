@@ -70,7 +70,24 @@
       <a href="app/JamsGadget.apk" class="nav-cta" download>
         <span>Download Android</span>
       </a>
+      
+      <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
     </div>
+  </nav>
+
+  <nav class="mobile-nav">
+    <a href="#features">Features</a>
+    <a href="#workflow">How It Works</a>
+    <a href="#team">Team</a>
+    <a href="#faq">FAQ</a>
+    <a href="#download">Download</a>
+    <a href="app/JamsGadget.apk" download>Download Android</a>
   </nav>
 
   <main>
@@ -810,6 +827,38 @@
   } else if (sections[0]) {
     setActiveLink(sections[0].id);
   }
+
+  // Mobile menu toggle
+  const menuToggle = document.querySelector('.mobile-menu-toggle');
+  const mobileNav = document.querySelector('.mobile-nav');
+  
+  if (menuToggle && mobileNav) {
+    menuToggle.addEventListener('click', () => {
+      mobileNav.classList.toggle('active');
+      menuToggle.classList.toggle('active');
+      menuToggle.setAttribute('aria-expanded', menuToggle.classList.contains('active'));
+    });
+
+    // Close menu when link is clicked
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('active');
+        menuToggle.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  // Hide mobile menu on resize to desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 1024 && mobileNav && mobileNav.classList.contains('active')) {
+      mobileNav.classList.remove('active');
+      if (menuToggle) {
+        menuToggle.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      }
+    }
+  });
 </script>
 </body>
 </html>
